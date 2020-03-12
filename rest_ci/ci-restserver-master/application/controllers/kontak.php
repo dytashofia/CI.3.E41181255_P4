@@ -74,7 +74,7 @@ class Kontak extends REST_Controller {
         $update = $this->db->update('telepon', $data);
         if ($update) { //jika update selesai maka tampil respon 
             $this->response($data, 200);
-        } else { ,, jika // jika update gagal maka akan tampil respon fail dengan status 502
+        } else { // jika update gagal maka akan tampil respon fail dengan status 502
             $this->response(array('status' => 'fail', 502));
         }
     }
